@@ -140,7 +140,7 @@ public class Market {
 	}
 
 
-	public final static String version = "2.1.0";
+	public final static String version = "1.0.0-1.10.2";
 
 	public static String getVersion() {
 		return version;
