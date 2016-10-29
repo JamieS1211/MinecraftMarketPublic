@@ -34,7 +34,7 @@ dependencies {
 }
 
 dependencies {
-    compile 'org.spongepowered:spongeapi:4.0.3'
+    compile 'org.spongepowered:spongeapi:6.0.0-SNAPSHOT'
     compile 'junit:junit:4.12'
 }
 
@@ -42,10 +42,8 @@ spongestart{
     eula true
 
     //optional configs
-    spongeVanillaBuild 'LATEST'
-    spongeForgeBuild '1538'
+    spongeForgeBuild '1844'
     forgeServerFolder 'run'
-    //vanillaServerFolder 'run/vanilla'
 }
 
 if (JavaVersion.current().isJava8Compatible() || JavaVersion.current().isJava9Compatible()) {

@@ -15,6 +15,10 @@ import org.spongepowered.api.command.CommandResult;
 import org.spongepowered.api.command.CommandSource;
 import org.spongepowered.api.text.Text;
 import org.spongepowered.api.text.format.TextColors;
+import org.spongepowered.api.world.Location;
+import org.spongepowered.api.world.World;
+
+import javax.annotation.Nullable;
 
 public class Commands implements CommandCallable {
 
@@ -92,8 +96,8 @@ public class Commands implements CommandCallable {
 	}
 
 	@Override
-	public List<String> getSuggestions(CommandSource source, String arguments) throws CommandException {
-		return new ArrayList<>();
+	public List<String> getSuggestions(CommandSource source, String arguments, @Nullable Location<World> targetPosition) throws CommandException {
+		return null;
 	}
 
 	@Override
@@ -102,12 +106,12 @@ public class Commands implements CommandCallable {
 	}
 
 	@Override
-	public Optional<? extends Text> getShortDescription(CommandSource source) {
+	public Optional<Text> getShortDescription(CommandSource source) {
 		return Optional.empty();
 	}
 
 	@Override
-	public Optional<? extends Text> getHelp(CommandSource source) {
+	public Optional<Text> getHelp(CommandSource source) {
 		return Optional.empty();
 	}
 
